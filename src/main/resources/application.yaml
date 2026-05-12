@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: capsule-api
+  data:
+    redis:
+      url: "redis://localhost:6379"
+server:
+  port: 8787
+
+capsule:
+  share:
+    store: redis
+    key-prefix: "capsule:share:"
+    ttl-seconds: 600
+    code-length: 8
+    max-payload-bytes: 262144
+    max-code-attempts: 5
+    allowed-kinds:
+      - deck
+      - config
+      - form
+      - settings
