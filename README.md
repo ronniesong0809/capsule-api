@@ -78,6 +78,13 @@ Health check:
 curl http://localhost:8787/health
 ```
 
+OpenAPI:
+
+```text
+http://localhost:8787/v3/api-docs
+http://localhost:8787/swagger-ui.html
+```
+
 Create a share:
 
 ```bash
